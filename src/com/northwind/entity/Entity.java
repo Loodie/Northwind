@@ -129,5 +129,4 @@ public abstract class Entity {
 		setX(getX() + x);
 		setY(getY() + y);
 	}
-	
 }

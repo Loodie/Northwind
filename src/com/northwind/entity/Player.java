@@ -159,6 +159,5 @@ public class Player extends Entity {
 			statPoints--;
 			magicLevel++;
 		}
-	}
-	
+	}	
 }

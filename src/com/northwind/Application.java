@@ -1,6 +1,6 @@
 package com.northwind;
 
-import com.northwind.entity.NPC;
+import com.northwind.entity.npc.NPC;
 import com.northwind.map.Position;
 
 public class Application {

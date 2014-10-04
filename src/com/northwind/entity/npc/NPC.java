@@ -1,5 +1,6 @@
-package com.northwind.entity;
+package com.northwind.entity.npc;
 
+import com.northwind.entity.Entity;
 import com.northwind.map.Position;
 
 /**

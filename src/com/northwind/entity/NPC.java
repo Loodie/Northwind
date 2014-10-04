@@ -21,6 +21,5 @@ public class Npc extends Entity {
 	 */
 	public Npc(Position position, String name, String description) {
 		super(position, name, description);
-	}
-	
+	}	
 }

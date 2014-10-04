@@ -39,10 +39,8 @@ public class Area {
 	public boolean containsPosition(Position p) {
 		boolean containsX = p.getX() >= topLeft.getX() 
 				&& p.getX() <= bottomRight.getX(); //Contains the x-coordinate of the position
-		
 		boolean containsY = p.getY() >= topLeft.getY() 
 				&& p.getY() <= bottomRight.getY(); //Contains the y-coordinate of the position
-		
 		return containsX && containsY;
 	}
 	

@@ -39,7 +39,7 @@ public class Position {
 	
 	@Override
 	public String toString() {
-		return "x: " + getX() + ", y: " + getY();
+		return "[POSITION: X: " + x + ", Y: " + y + "]";
 	}
 	
 	/**

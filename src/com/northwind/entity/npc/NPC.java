@@ -22,5 +22,15 @@ public class Npc extends Entity {
 	 */
 	public Npc(Position position, String name, String description) {
 		super(position, name, description);
-	}	
+	}
+
+	/**
+	 * Moves the npc
+	 * 
+	 * @param other
+	 * 			The position
+	 */
+	public void move(Position other) {
+		getPosition().setPosition(other);
+	}
 }

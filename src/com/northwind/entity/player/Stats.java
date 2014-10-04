@@ -62,5 +62,4 @@ public class Stats {
 	public int getLevel(Skill skill) {
 		return stats[skill.ordinal()];
 	}
-	
 }

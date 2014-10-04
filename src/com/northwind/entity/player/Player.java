@@ -102,4 +102,13 @@ public class Player extends Entity {
 	public void move(Position position) {
 		getPosition().setPosition(position);
 	}
+	/**
+	 * Of the player is in the right position
+	 * @param other
+	 * 			The position
+	 * @return true if in position
+	 */
+	public boolean inPosition(Position other) {
+		return getPosition().getX() == other.getX() && getPosition().getY() == other.getY();
+	}
 }

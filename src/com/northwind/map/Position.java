@@ -81,13 +81,31 @@ public class Position {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
 	/**
-	 * Sets the position
-	 * @param other
-	 * 			The position
+	 * Set the coordinates of the Position
+	 * 
+	 * @param x
+	 * 		The new x-coordinate for the Position
+	 * @param y
+	 * 		The new y-coordinate for the Position
 	 */
-	public void setPosition(Position other) {
-		this.x = other.x;
-		this.y = other.y;
+	public void setCoords(int x, int y) {
+		setX(x);
+		setY(y);
 	}
+	
+	/**
+	 * Moves the Position
+	 * 
+	 * @param x
+	 * 		Length to move the Position in the x direction
+	 * @param y
+	 * 		Length to move the Position in the y direction
+	 */
+	public void move(int x, int y) {
+		this.x += x;
+		this.y += y;
+	}
+	
 }

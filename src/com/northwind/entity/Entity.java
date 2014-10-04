@@ -45,26 +45,6 @@ public abstract class Entity {
 	}
 	
 	/**
-	 * Getter for the x-coordinate of the Entity
-	 * 
-	 * @return
-	 * 		The x-coordinate of the Entity
-	 */
-	public int getX() {
-		return position.getX();
-	}
-	
-	/**
-	 * Getter for the y-coordinate of the Entity
-	 * 
-	 * @return
-	 * 		The y-coordinate of the Entity
-	 */
-	public int getY() {
-		return position.getY();
-	}
-	
-	/**
 	 * Getter for the name of the Entity
 	 * 
 	 * @return
@@ -84,59 +64,4 @@ public abstract class Entity {
 		return description;
 	}
 	
-	/**
-	 * Set the coordinates of the Entity
-	 * 
-	 * @param x
-	 * 		The new x-coordinate for the Entity
-	 * @param y
-	 * 		The new y-coordinate for the Entity
-	 */
-	public void setCoords(int x, int y) {
-		position.setX(x);
-		position.setY(y);
-	}
-	
-	/**
-	 * Setter for the x-coordinate of the Entity
-	 * 
-	 * @param x
-	 * 		The new x-coordinate for the Entity
-	 */
-	public void setX(int x) {
-		position.setX(x);
-	}
-	
-	/**
-	 * Setter for the y-coordinate of the Entity
-	 * 
-	 * @param y
-	 * 		The new y-coordinate for the Entity
-	 */
-	public void setY(int y) {
-		position.setY(y);
-	}
-	
-	/**
-	 * Moves the Entity
-	 * 
-	 * @param x
-	 * 		Length to move the entity in the x direction
-	 * @param y
-	 * 		Length to move the entity in the y direction
-	 */
-	public void move(int x, int y) {
-		setX(getX() + x);
-		setY(getY() + y);
-	}
-	
-	/**
-	 * Move the entity to a different position.
-	 * 
-	 * @param p The position to move the entitiy to.
-	 */
-	public void moveTo(Position p) {
-		position.setX(p.getX());
-		position.setY(p.getY());
-	}
 }

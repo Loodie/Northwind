@@ -93,5 +93,13 @@ public class Player extends Entity {
 	public Stats getStats() {
 		return stats;	
 	}
-	
+	/**
+	 * Moves the player
+	 * 
+	 * @param position
+	 * 			The position to move to
+	 */
+	public void move(Position position) {
+		getPosition().setPosition(position);
+	}
 }

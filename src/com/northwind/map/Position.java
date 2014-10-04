@@ -81,4 +81,13 @@ public class Position {
 	public void setY(int y) {
 		this.y = y;
 	}
+	/**
+	 * Sets the position
+	 * @param other
+	 * 			The position
+	 */
+	public void setPosition(Position other) {
+		this.x = other.x;
+		this.y = other.y;
+	}
 }

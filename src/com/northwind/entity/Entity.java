@@ -129,4 +129,14 @@ public abstract class Entity {
 		setX(getX() + x);
 		setY(getY() + y);
 	}
+	
+	/**
+	 * Move the entity to a different position.
+	 * 
+	 * @param p The position to move the entitiy to.
+	 */
+	public void moveTo(Position p) {
+		position.setX(p.getX());
+		position.setY(p.getY());
+	}
 }

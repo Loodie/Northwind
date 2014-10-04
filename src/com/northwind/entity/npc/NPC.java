@@ -8,7 +8,7 @@ import com.northwind.map.Position;
  * 
  * @author Ludwig
  */
-public class Npc extends Entity {
+public class NPC extends Entity {
 
 	/**
 	 * Creates a new NPC
@@ -20,17 +20,8 @@ public class Npc extends Entity {
 	 * @param description
 	 * 		The description of the new NPC
 	 */
-	public Npc(Position position, String name, String description) {
+	public NPC(Position position, String name, String description) {
 		super(position, name, description);
 	}
 
-	/**
-	 * Moves the npc
-	 * 
-	 * @param other
-	 * 			The position
-	 */
-	public void move(Position other) {
-		getPosition().setPosition(other);
-	}
 }

@@ -1,6 +1,6 @@
-package com.northwind.entity;
+package com.northwind.game.entity;
 
-import com.northwind.map.Position;
+import com.northwind.game.map.Position;
 
 /**
  * A parent class for Player and NPC

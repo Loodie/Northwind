@@ -1,7 +1,7 @@
-package com.northwind.entity.player;
+package com.northwind.game.entity.player;
 
-import com.northwind.entity.Entity;
-import com.northwind.map.Position;
+import com.northwind.game.entity.Entity;
+import com.northwind.game.map.Position;
 
 
 /**

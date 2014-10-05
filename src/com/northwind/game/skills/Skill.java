@@ -1,4 +1,4 @@
-package com.northwind.skills;
+package com.northwind.game.skills;
 
 /**
  * Enum with all skills

@@ -1,7 +1,7 @@
-package com.northwind.entity.npc;
+package com.northwind.game.entity.npc;
 
-import com.northwind.entity.Entity;
-import com.northwind.map.Position;
+import com.northwind.game.entity.Entity;
+import com.northwind.game.map.Position;
 
 /**
  * Any non playable character in the game

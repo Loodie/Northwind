@@ -1,6 +1,6 @@
-package com.northwind.entity.player;
+package com.northwind.game.entity.player;
 
-import com.northwind.skills.Skill;
+import com.northwind.game.skills.Skill;
 
 public class Stats {
 	

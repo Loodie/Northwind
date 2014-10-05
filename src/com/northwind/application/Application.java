@@ -1,4 +1,4 @@
-package com.northwind;
+package com.northwind.application;
 
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
@@ -7,9 +7,8 @@ import org.lwjgl.opengl.DisplayMode;
 public class Application {
 	
 	public static void main(String[] args) {
-		
 		try {
-			Display.setDisplayMode(new DisplayMode(800, 600));
+			Display.setDisplayMode(new DisplayMode(800, 600)); //Width: 800, Height: 600
 			Display.setTitle("Northwind");
 			Display.create();
 		} catch (LWJGLException e) {
@@ -19,6 +18,6 @@ public class Application {
 		while(!Display.isCloseRequested()) {
 			Display.update();
 		}
-		
-	}	
+	}
+	
 }

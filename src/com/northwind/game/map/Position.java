@@ -1,4 +1,4 @@
-package com.northwind.map;
+package com.northwind.game.map;
 
 /**
  * A position in the game

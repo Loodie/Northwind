@@ -91,8 +91,8 @@ public class Position {
 	 * 		The new y-coordinate for the Position
 	 */
 	public void setCoords(int x, int y) {
-		setX(x);
-		setY(y);
+		this.x = x;
+		this.y = y;
 	}
 	
 	/**

@@ -32,7 +32,7 @@ public class Player extends Entity {
 	 * 		The name of the new Player
 	 */
 	public Player(String name) {
-		super(Position.getStartingPosition(), name, "What an ugly player.");
+		super("/res/character.png", Position.getStartingPosition(), name, "What an ugly player.");
 		stats = new Stats();
 	}
 	

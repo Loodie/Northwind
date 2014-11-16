@@ -1,5 +1,11 @@
 package com.northwind.game.entity;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
 import com.northwind.game.map.Position;
 
 /**
@@ -8,6 +14,9 @@ import com.northwind.game.map.Position;
  * @author Ludwig
  */
 public abstract class Entity {
+	
+	/** The Image representing the Entity */
+	private Image image;
 	
 	/** The position of the Entity */
 	private Position position;
@@ -21,6 +30,8 @@ public abstract class Entity {
 	/**
 	 * Creates a new Entity
 	 * 
+	 * @param
+	 * 		The path to the image representing the Entity
 	 * @param position
 	 * 		The position of the Entity
 	 * @param name
@@ -28,10 +39,20 @@ public abstract class Entity {
 	 * @param description
 	 * 		The description of the Entity
 	 */
-	public Entity(Position position, String name, String description) {
+	public Entity(String imagePath, Position position, String name, String description) {
+		try {
+			image = ImageIO.read(Entity.class.getResource(imagePath));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		this.position = position;
 		this.name = name;
 		this.description = description;
+	}
+	
+	public void render(Graphics g) {
+		g.drawImage(image, position.getX(), position.getY(), null);
 	}
 	
 	/**

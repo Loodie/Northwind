@@ -20,8 +20,8 @@ public class NPC extends Entity {
 	 * @param description
 	 * 		The description of the new NPC
 	 */
-	public NPC(Position position, String name, String description) {
-		super(position, name, description);
+	public NPC(String imagePath, Position position, String name, String description) {
+		super(imagePath, position, name, description);
 	}
 
 }
